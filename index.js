@@ -16,8 +16,9 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
+
 //The nested function can access the internal function because of closure. Closure allows nested functions to access variables defined in an outer function. 
-//In a sense the nested function is a child and it can inherit it's parent function's variables.
+//In a sense the nested function is a child and it can inherit it's parents and grandparents function's variables.
 
 
 
@@ -120,25 +121,23 @@ const zooAnimals = [
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(a, b, cb){
-    cb = a + b;
-    return cb;
+function add(a, b){
+    return a + b;
   }
-  //console.log(add(5, 5, consume));
+
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(a, b, cb){
-   cb = a * b;
-   return cb;
+function multiply(a, b){
+   return a * b;
   }
 
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(a, b, cb){
-   cb = `Hello ${a} ${b}, nice to meet you!`
-   return cb;
+function greeting(a, b){
+   return `Hello ${a} ${b}, nice to meet you!`
+   
   }
   
   
