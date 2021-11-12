@@ -26,13 +26,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+First, map is good for transforming the data in an array and it can return a new array with transformed data, such as with an array with different names and ages, a map can take the array and multiply 2 by the ages or change the names by its index.
+
+reduce is when we want to combine all the data into a single value, for example when everything in the data is numbers it can add all the numbers up, or of they're all strings you can combine them into one string.
+
+filter is when you want to "filter" through the array by only returning data that meet certain criteria such as in a array with names and ages, you can use filter to only return ages over 18 and names that have more than x amount of characters.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function that takes other functions as arguments.
+A callback function is a function that gets passed to a higher order function as an argument.
 
 3. Explain what a closure is.
 
+Closure is when an inner function has access to defined variables in an outer function.
+
 4. Describe the four principles of the 'this' keyword.
 
+Window binding, which is when we use this without context and therefore it only returns the window or global object.
+Implicit binding, is when the this keyword is referencing whatever is left of the dot when the method is invoked.
+Explicit binding, is when we tell the this keyword where we want it to reference to by using .call, .apply, or .bind.
+New Explicit binding, is when the this keyword references the new object that is created from the constructor function.
+
 5. Why do we need super() in an extended class?
+
+Super allows us to access all of the properties and methods of its parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
